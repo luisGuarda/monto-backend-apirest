@@ -1,5 +1,7 @@
 package com.bcp.pe.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +29,17 @@ public class TipoCambioServiceImpl implements TipoCambioService{
 		
 		return Mono.justOrEmpty(response);
 	}
-	
+
+	@Override
+	public Mono<TipoCambioEntity> postUpdateTypeChange(TipoCambioEntity request, int id) {
+		
+		TipoCambioEntity tipoCambioEntity = tipoCambioRepository.findById(id);
+		tipoCambioEntity.setMoneda(request.getMoneda());
+		tipoCambioEntity.setTipoCambio(request.getTipoCambio());
+		tipoCambioEntity.setSimboloMoneda(request.getSimboloMoneda());
+		tipoCambioRepository.save(tipoCambioEntity);
+		
+		return Mono.justOrEmpty(tipoCambioEntity);
+	}
 
 }
