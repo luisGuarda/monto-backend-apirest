@@ -38,6 +38,11 @@ public class MontoController {
 	private MontoService montoService;
 	
 	
+	/**
+	 * Enpoint para guardar monedas y sus tipos de cambio.
+	 * 
+	 *
+	 */
 	@PostMapping("/saveTypeChange")
 	public Mono<Response> saveTypeChange (@RequestBody TipoCambioEntity request){
 		
@@ -48,6 +53,12 @@ public class MontoController {
 		
 	}
 	
+	
+	/**
+	 * Enpoint para operar montos.
+	 * 
+	 *
+	 */
 	@PostMapping("/changeMonto")
 	public Mono<ResponseMonto> changeMonto(@RequestBody RequestMonto request){
 		
@@ -55,6 +66,11 @@ public class MontoController {
 		
 	}
 	
+	/**
+	 * Enpoint actualizar el tipo de cambio.
+	 * 
+	 *
+	 */
 	@PostMapping("/updateTypeChange/{id}")
 	public Mono<TipoCambioEntity> updateTypeChange(@RequestBody TipoCambioEntity request, @PathVariable int id){
 		
