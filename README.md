@@ -1,5 +1,17 @@
 # monto-backend-apirest
 
+### ¡Importante!: Ejecutar los comandos en la carpeta raíz del proyecto.
+
+---------------------------------
+# Comandos para generar JAR.
+
+## PASO 1: Generar JAR para desplegar.
+
+mvn clean package install
+
+---------------------------------
+# Comandos para desplegar en DOCKER.
+
 ## PASO 1: crear imagen
 
 docker build -t "bcp/monto-backend-apirest" .
