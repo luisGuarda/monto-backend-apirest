@@ -13,6 +13,7 @@ import javax.ws.rs.core.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import com.bcp.pe.beans.RequestMonto;
 import com.bcp.pe.beans.ResponseMonto;
@@ -57,6 +58,7 @@ public class MontoServiceImpl implements MontoService{
 		Invocation.Builder solicitud = webTarget.request();
 		
 		Response response= solicitud.get();
+		
 		
 
 		//Busqueda del precio de la moneda destino y operación
