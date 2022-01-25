@@ -3,9 +3,7 @@ package com.bcp.pe;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.reactive.config.EnableWebFlux;
 
-//@EnableWebFlux
 @SpringBootApplication
 public class MontoBackendApirestApplication implements CommandLineRunner{
 	

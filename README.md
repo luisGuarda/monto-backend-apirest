@@ -1,5 +1,11 @@
 # monto-backend-apirest
 
+Para poder acceder a los endpoints del servicio por favor ejecutar primero el endpoint "/login" para obtener el TOKEN JWT,
+el usuario y contraseña son los siguientes:
+
+username: admin
+password: admin
+
 ### ¡Importante!: Ejecutar los comandos en la carpeta raíz del proyecto.
 
 ---------------------------------

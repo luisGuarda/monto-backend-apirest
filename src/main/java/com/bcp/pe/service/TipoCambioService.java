@@ -1,7 +1,5 @@
 package com.bcp.pe.service;
 
-import java.util.List;
-
 import com.bcp.pe.beans.Response;
 import com.bcp.pe.entity.TipoCambioEntity;
 
